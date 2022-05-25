@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Open+Sans:wght@300;400;600&display=swap');
+
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.header-title {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 66px;
+
+    background: linear-gradient(264.26deg, #FF267A 0%, #FFA634 101.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #F9F9F9;
+}
+
+.header-icon {
+    width: 18px;
+    color: #181818;
+}
+
+.main-movie {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+    padding-left: 50px;
+}
+
+.movie-genre {
+    background: #181818;
+    border-radius: 0px 8px;
+    padding: 5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    color: #FFA634;
+}
+
+.movie-extra {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125.19%;
+    /* identical to box height, or 18px */
+
+
+    color: #F9F9F9;
+
+}
+
+.rating-icon {
+    filter: drop-shadow(0px 3px 12px #FF6B00);
+}
+
+.movie-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    /* identical to box height, or 114% */
+
+    margin: 0;
+    color: #F9F9F9;
+}
+
+.movie-desc {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    width: 536px;
+
+    color: #F9F9F9;
+    margin: 0;
+}
+
+.movie-button {
+    background: #FFA634;
+    border-radius: 4px;
+
+    width: 160px;
+    padding: 12px 65px;
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    color: #181818;
+    margin: 0;
+}
+
+.populars {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 40px
+}
+
+.populars .text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #F9F9F9;
+}
+
+.populars .bar {
+    border-top: 2px solid #FFA634;
+    width: 60px;
+
+}
+
+.populars-list {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 10vw;
+}
+
+.show {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.show-title {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    /* identical to box height */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #F9F9F9;
+}
+
+.show-category {
+    margin-left: 15px;
+
+    background: #181818;
+    border-radius: 0px 8px;
+    padding: 5px;
+
+    text-align: center;
+
+    /* identical to box height, or 114% */
+
+    width: 50px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    color: #FFA634;
+}
+
+.show-classification {
+    padding-left: 15px;
+
+
+}
+
+@media only screen and (max-width: 1750px){
+    .populars-list{
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+    }
+}
+@media only screen and (max-width: 1400px){
+   .show{
+       width: 260px;
+       height: 370px;
+   }
+}
+@media only screen and (max-width: 1250px){
+   .show{
+       width: 220px;
+       height: 340px;
+   }
+}
+@media only screen and (max-width: 1100px){
+   .show{
+       width: 200px;
+       height: 320px;
+   }
+}
+@media only screen and (max-width: 1000px){
+    .populars-list{
+        grid-template-columns: 30vw 30vw 30vw;
+    }
+    .show{
+        width: 260px;
+        height: 370px;
+    }
+}
+@media only screen and (max-width: 830px){
+    .show{
+        width: 210px;
+        height: 340px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .show{
+        width: 200px;
+        height: 310px;
+    }
+}
+@media only screen and (max-width: 680px){
+    .show{
+        width: 180px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 630px){
+    .show{
+        width: 160px;
+        height: 280px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .show{
+        width: 130px;
+        height: 230px;
+    }
+
+    .header, .main-movie, .populars{
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .show{
+        width: 120px;
+        height: 240px;
+    }
+    .populars-list{
+        grid-template-columns: 32vw 32vw 30vw;
+    }
+
+    .header, .main-movie, .populars{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .populars-list{
+        grid-template-columns: 45vw 40vw;
+    }
+    .show{
+        width: 150px;
+        height: 260px;
+    }
+}
+@media only screen and (max-width: 340px){
+    .populars-list{
+        grid-template-columns: 45vw 40vw;
+    }
+    .show{
+        width: 120px;
+        height: 230px;
+    }
+}
+
