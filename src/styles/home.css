@@ -6,6 +6,11 @@ a{
     color: #ffff;
 }
 
+.screen{
+    background-size: auto;
+    background-position: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -148,10 +153,10 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 50px;
     gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 40px
+    margin-top: 40px;
+    width: 90vw
 }
 
 .populars .text {
@@ -173,13 +178,14 @@ a{
 
 .populars-list {
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw 10vw;
+    grid-template-columns: repeat(5, 19vw);
 }
 
 .show {
     width: 300px;
     height: 400px;
     background-size: cover;
+    
     /* <------ */
     background-repeat: no-repeat;
     background-position: center center;
@@ -242,9 +248,9 @@ a{
 
 }
 
-@media only screen and (max-width: 1750px){
+@media only screen and (max-width: 1650px){
     .populars-list{
-        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: repeat(4,24vw);
     }
 }
 @media only screen and (max-width: 1400px){
@@ -254,6 +260,35 @@ a{
    }
 }
 @media only screen and (max-width: 1250px){
+    .header-options{
+        font-size: 14px;
+    }
+
+    .header-title{
+        font-size: 28px !important;
+    }
+
+    .movie-title{
+        font-size: 25px;
+    }
+
+    .movie-desc{
+        font-size: 16px;
+    }
+
+    .movie-button{
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+        padding: 10px 25px;
+        text-align: center;
+    }
+
+    .populars-list{
+        grid-template-columns: repeat(4,22vw);
+        width: 90vw;
+        
+    }
    .show{
        width: 220px;
        height: 340px;
@@ -266,8 +301,12 @@ a{
    }
 }
 @media only screen and (max-width: 1000px){
+    .populars{
+        padding-right: 0;
+    }
     .populars-list{
-        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-columns: repeat(3, 30vw);
+        width: 90vw;
     }
     .show{
         width: 260px;
@@ -281,6 +320,14 @@ a{
     }
 }
 @media only screen and (max-width: 750px){
+    .header-options{
+        display: none;
+    }
+
+    .movie-desc{
+        width: 80vw;
+    }
+
     .show{
         width: 200px;
         height: 310px;
@@ -313,6 +360,11 @@ a{
         width: 120px;
         height: 240px;
     }
+
+    .populars{
+        padding-right: 0 !important;
+    }
+
     .populars-list{
         grid-template-columns: 32vw 32vw 30vw;
     }

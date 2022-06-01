@@ -18,7 +18,7 @@ export const HomeScreen = () => {
     document.title = 'Home - '+profile.username;
    
     return (
-        <div className="screen" style={{background: `linear-gradient(-269.55deg, #1D1D1D 6.76%, rgba(29, 29, 29, 0) 96.54%),linear-gradient(269.55deg, #1D1D1D -40.76%, rgba(29, 29, 29, 0) 90.54%),url(${profile.main_show.background}) repeat-x fixed`}}>
+        <div className="screen" style={{background: `linear-gradient(-269.55deg, #1D1D1D 6.76%, rgba(29, 29, 29, 0) 96.54%),linear-gradient(269.55deg, #1D1D1D -40.76%, rgba(29, 29, 29, 0) 90.54%),url(${profile.main_show.background}) repeat-x fixed center`}}>
             <Header profile={profile}  />
             <InfoMovie profile={profile} />
             <Populars profile={profile} />

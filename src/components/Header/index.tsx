@@ -16,7 +16,7 @@ export const Header = ({profile}: HeaderProps) => {
     const navigate = useNavigate();
     return (
         <div className="header">
-            <p  className="header-title">StreamDev</p>
+            <a onClick={() => navigate('/',{replace: true})} className="header-title">StreamDev</a>
             <div className="header-options">
                 <img src={searchIcon} alt="Ícone pesquisa" className="header-icon" />
                 <a href=''  className="header-link" onClick={() => navigate('/',{replace: true})} >Início</a>

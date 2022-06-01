@@ -18,7 +18,8 @@ export interface profile {
         source: string;
         alt: string;
     };
-    color: string;
+    color1: string;
+    color2: string;
     main_show: {
         category: string;
         time: string;
@@ -34,10 +35,11 @@ export const profiles: Array<profile> = [
     {
         username: 'guissinhu',
         image: {
-            source: '',
+            source: 'https://img.icons8.com/ios-filled/50/000000/angularjs.png',
             alt: 'Imagem de Perfil - Guissi'
         },
-        color: '#570EAB',
+        color1: '#fa1f3c',
+        color2:'#f74e65' ,
         main_show: {
             category: 'Comédia',
             time: '10T',
@@ -82,10 +84,11 @@ export const profiles: Array<profile> = [
     {
         username: 'xandin',
         image: {
-            source: '',
+            source: 'https://img.icons8.com/windows/64/000000/nodejs.png',
             alt: 'Imagem de Perfil - Xandin'
         },
-        color: '#570EAB',
+        color1: '#13ec99',
+        color2: '#5be4af',
         main_show: {
             category: 'Ficção',
             time: '2T',
@@ -133,31 +136,57 @@ export const profiles: Array<profile> = [
             source: '',
             alt: 'Imagem de Perfil - Wilsão'
         },
-        color: '#570EAB',
+        color1: '#2522e9',
+        color2: '#5855f0',
         main_show: {
-            category: '',
-            time: '',
-            classification: [],
-            title: '',
-            description: '',
-            background: ''
+            category: 'Terror',
+            time: '1 h 39 min',
+            classification: [1,1,1],
+            title: 'The Sadness',
+            description: 'Um jovem casal tentando se reunir em meio a uma cidade devastada por uma praga, que transforma suas vítimas em sádicos enlouquecidos e sanguinários.',
+            background: 'https://m.media-amazon.com/images/M/MV5BN2IyODk3YTctMmU5ZS00YzJhLTg2NjQtNDE1NmExNDRmYWQzXkEyXkFqcGdeQXVyMzgzMjU4NjM@._V1_.jpg'
         },
         shows: [
             {
-                category: '',
-                classification: [],
-                title: '',
-                poster: ''
-            }
+                category: 'Animação',
+                classification: [1,1,1,1],
+                title: "Bob's Burgers",
+                poster: 'https://img.elo7.com.br/product/original/26A8438/big-poster-serie-bobs-burgers-lo01-tamanho-90x60-cm-poster.jpg'
+            },
+            {
+                category: 'Terror',
+                classification: [1,1,1],
+                title: "Boa Noite, Mamãe",
+                poster: 'https://br.web.img3.acsta.net/pictures/15/12/08/18/05/585961.jpg'
+            },
+            {
+                category: 'Animação',
+                classification: [1,1,1,1],
+                title: "Bob Esponja Calça Quadrada",
+                poster: 'https://br.web.img2.acsta.net/r_1280_720/pictures/20/04/28/06/34/0334746.jpg'
+            },
+            {
+                category: 'Ficção',
+                classification: [1,1,1,0.5],
+                title: "The 100",
+                poster: 'https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/3/138220180226-uau-posters-series-the-hundred-the-10.jpg'
+            },
+            {
+                category: 'Animação',
+                classification: [1,1,1,1,0.5],
+                title: "Os Simpsons",
+                poster: 'https://i.pinimg.com/originals/c7/b4/b0/c7b4b0c0265a5bc34089e305f507492f.jpg'
+            },
         ]
     },
     {
         username: 'gabizera',
         image: {
-            source: '',
+            source: 'https://img.icons8.com/pastel-glyph/64/000000/headset--v2.png',
             alt: 'Imagem de Perfil - Gabi'
         },
-        color: '#570EAB',
+        color1: '#c00cf7',
+        color2: '#cf53f5',
         main_show: {
             category: '',
             time: '',
